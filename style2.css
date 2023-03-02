@@ -1,0 +1,98 @@
+
+/* MAIN STYLINGS */
+
+main{
+  padding: 20px var(--padding-left-right);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+section{
+
+  padding-right: 10px;
+  flex: 2 0 600px;
+  
+  
+}
+
+section h2{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+aside{
+ 
+  padding-left: 10px;
+   flex: 1 0 300px;
+}
+
+aside h2{
+  
+}
+
+.ad-container{
+  position: relative;
+  height: 600px;
+  border-radius: 10px;
+  padding: 20px 30px;
+ 
+}
+
+.ad-container img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ad-container p{
+  position: absolute;
+  left: 20px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: var(--regular-white);
+}
+
+.ad-container > :nth-child(2){
+  top: 20px;
+}
+
+.ad-container > :nth-child(3){
+  top: 100px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.ad-container button{
+  position: absolute;
+  left: 20px;
+  top: 500px;
+  background-color: beige;
+  color: var(--dark-blue);
+  margin-left: 20px;
+  font-size: 45px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+
+
+/* BOOKING CARD STYLINGS */
+
+.booking-cards-container{
+  height: 1000px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
+  
+}
+
+.booking-card{
+  flex: 1 0 300px;
+}

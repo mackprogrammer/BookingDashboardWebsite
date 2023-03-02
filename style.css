@@ -1,0 +1,182 @@
+:root {
+  /* COLOR SCHEME */
+  background-color: #FEF3EC;
+  --light-blue: #2FAFC8;
+  --dark-blue:#3E3D4E;
+  --blue-font: #3E416D;
+  --orange: #FCC7A8;
+  --gray-font: #AEADB4;
+  --gray-border:#979797;
+  --regular-white: white;
+  --padding-left-right: 40px;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  color: var(--dark-blue);
+}
+
+a{
+  text-decoration: none;
+}
+
+.back-arrow{
+    display: none; 
+   position: absolute;
+   top: 20px;
+   left: 20px;
+    z-index: 2;
+    font-size: 30px;
+  }
+
+/* HEADER STYLINGS */
+
+header{
+  height: 120px;
+  background-color: var(--regular-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--padding-left-right);
+}
+
+header > :first-child{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header h1{
+  margin-top: 10px;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+header nav a{
+
+  padding: 10px 0;
+  display: inline-block;
+  color: var(--gray-font);
+  border-bottom: 2px solid transparent;
+}
+
+header nav a:hover{
+  border-bottom: 2px solid var(--light-blue);
+  color: var(--dark-blue);
+}
+
+header nav a:first-child{
+  margin-right: 10px;
+  
+}
+
+header nav a:last-child{
+  
+}
+
+header button{
+  background-color: var(--light-blue);
+  border: none;
+  color: var(--regular-white);
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+/* MAIN STYLINGS */
+
+main{
+  padding: 20px var(--padding-left-right);
+}
+
+section{
+  
+}
+
+section h2, aside h2{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* BOOKING CARD STYLINGS */
+
+.booking-cards-container{
+  
+}
+
+.booking-card{
+
+   /* Non-flexbox-related properties */
+
+   /* Margins and Padding */
+   margin-bottom: 10px;
+   padding: 10px 20px;
+
+   background-color: var(--regular-white);
+   border-radius: 20px;
+   box-shadow: 3px 3px 5px black;
+
+   /* Flexbox-related properties */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.date-container{
+  
+  border-right: 2px solid var(--gray-font);
+  padding-right: 15px;
+  text-align: center;
+}
+
+/* Day of the Week */
+.date-container > :nth-child(1){
+  color: var(--gray-font);
+}
+
+/* Numeric Date */
+.date-container > :nth-child(2){
+  color: var(--dark-blue);
+  font-size: 20px;
+}
+
+/* Month Name */
+.date-container > :nth-child(3){
+  color: var(--light-blue);
+}
+
+
+/* Title of Massage: 'Single Swedish Massage' */
+.booking-card > :nth-child(2){
+ 
+  color: var(--dark-blue);
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.booking-card button{
+
+  background-color: var(--orange);
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px; 
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+

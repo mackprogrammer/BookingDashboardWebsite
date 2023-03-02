@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px){
+
+  .back-arrow{
+   display: block;
+  }
+  
+  header{
+    position: relative;
+    justify-content: center;
+  }
+
+  header > :first-child{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+
+  header h1{
+    margin-top: 0;
+  }
+
+  header nav{
+    display: none;
+  }
+
+    
+  header button{
+    display: none;
+  }
+
+}
